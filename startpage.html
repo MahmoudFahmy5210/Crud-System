@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+        <?php
+        include'crud_conn.php'
+        ?> 
+<html>
+    <head>
+        <title>Start page</title>
+        <style>
+            body
+            {
+                background-image: url(lib.jpg);
+                background-size: cover;
+            }
+            .branches
+            {
+                background: rgba(20, 0, 0, 0.566);
+                text-align: center;
+                width: 900px;
+                height: 400px;
+                margin: auto;
+                margin-top: 100px;
+                border-radius: 10px; 
+            }
+            .content td button
+            {
+                text-align: center;
+                color:black;
+                font-size: 50px;
+                margin: 35px 35px;
+                width: auto;
+                height: auto;
+                border-color: rgba(20, 0, 0, 0.566);
+                border-radius: 10px;
+                background-color: tomato;
+            
+            }
+            .content td button a{
+                font-family: cursive;
+                text-decoration: none;
+                color:	#B22222;
+            }
+            .content td button a:hover{
+                color:#767675;
+            }
+            
+            .content
+            {
+                margin: auto;
+                margin-top: 50px;
+                padding-top: 120px;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="branches">
+            <table class="content">
+                <td>
+                    <button type="submit" name="science"><a href="science/sci.php">Science</a> </button> 
+                </td>
+                <td>
+                    <button type="submit" name="rel"><a href="religious/rel.php"> Religous</a> </button> 
+                </td>
+                <td>
+                    <button type="submit" name="aut"><a href="literary/lit.php"> Literary</a> </button> 
+                </td>
+            </table>
+        </div>
+    </body>
+</html>
